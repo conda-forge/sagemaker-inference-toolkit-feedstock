@@ -1,18 +1,18 @@
 {% set name = "sagemaker_inference" %}
-{% set version = "1.1.5.post1" %}
+{% set version = "1.2.0" %}
 
 package:
-  name: "sagemaker-inference-toolkit"
-  version: "{{ version }}"
+  name: sagemaker-inference-toolkit
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: cdf912674c97b611f9a000029a995770d7d89d805292c49ac9440c10f8d5c215
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 9c13e4e1b2bf78a40babb8a673dfb0f34f562dfc90243a07b83e064fa6386e7d
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -29,13 +29,13 @@ test:
     - sagemaker_inference
 
 about:
-  home: "https://github.com/aws/sagemaker-inference-toolkit/"
-  license: "Apache-2.0"
-  license_family: "APACHE"
-  license_file: "LICENSE"
-  summary: "Open source toolkit for helping create serving containers to run on Amazon SageMaker."
-  doc_url: "https://pypi.org/project/sagemaker-inference/"
-  dev_url: "https://github.com/aws/sagemaker-inference-toolkit/"
+  home: https://github.com/aws/sagemaker-inference-toolkit/
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE
+  summary: Open source toolkit for helping create serving containers to run on Amazon SageMaker.
+  doc_url: https://pypi.org/project/sagemaker-inference/
+  dev_url: https://github.com/aws/sagemaker-inference-toolkit/
 
 extra:
   recipe-maintainers:
