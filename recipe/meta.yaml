@@ -1,5 +1,5 @@
 {% set name = "sagemaker_inference" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.2" %}
 
 package:
   name: sagemaker-inference-toolkit
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 848b3be312b3454e95cfbaffe301e4633935d496e8ca6fe6d3914ca20946a9d8
+  sha256: 7241fb5724e0ac50c90803d18bfd65f78295d5dd5733680c7c3cd35a7d23de3c
 
 build:
   noarch: python
