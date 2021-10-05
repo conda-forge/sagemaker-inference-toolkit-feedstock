@@ -18,11 +18,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.4
   run:
     - numpy
     - psutil
-    - python
+    - python >=3.4
     - retrying ==1.3.3
     - scipy
     - six
@@ -40,7 +40,9 @@ about:
   summary: Open source toolkit for helping create serving containers to run on Amazon SageMaker.
   license: Apache-2.0
   license_family: APACHE
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   doc_url: https://pypi.org/project/sagemaker-inference/
   dev_url: https://github.com/aws/sagemaker-inference-toolkit/
 
