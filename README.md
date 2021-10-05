@@ -31,7 +31,9 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-sagemaker--inference-green.svg)](https://anaconda.org/conda-forge/sagemaker-inference) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sagemaker-inference.svg)](https://anaconda.org/conda-forge/sagemaker-inference) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sagemaker-inference.svg)](https://anaconda.org/conda-forge/sagemaker-inference) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sagemaker-inference.svg)](https://anaconda.org/conda-forge/sagemaker-inference) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-sagemaker--inference--toolkit-green.svg)](https://anaconda.org/conda-forge/sagemaker-inference-toolkit) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sagemaker-inference-toolkit.svg)](https://anaconda.org/conda-forge/sagemaker-inference-toolkit) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sagemaker-inference-toolkit.svg)](https://anaconda.org/conda-forge/sagemaker-inference-toolkit) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sagemaker-inference-toolkit.svg)](https://anaconda.org/conda-forge/sagemaker-inference-toolkit) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-sagemaker_inference-green.svg)](https://anaconda.org/conda-forge/sagemaker_inference) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sagemaker_inference.svg)](https://anaconda.org/conda-forge/sagemaker_inference) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sagemaker_inference.svg)](https://anaconda.org/conda-forge/sagemaker_inference) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sagemaker_inference.svg)](https://anaconda.org/conda-forge/sagemaker_inference) |
 
 Installing sagemaker-inference-toolkit
 ======================================
@@ -40,18 +42,19 @@ Installing `sagemaker-inference-toolkit` from the `conda-forge` channel can be a
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `sagemaker-inference-toolkit` can be installed with:
+Once the `conda-forge` channel has been enabled, `sagemaker-inference, sagemaker-inference-toolkit, sagemaker_inference` can be installed with:
 
 ```
-conda install sagemaker-inference-toolkit
+conda install sagemaker-inference sagemaker-inference-toolkit sagemaker_inference
 ```
 
-It is possible to list all of the versions of `sagemaker-inference-toolkit` available on your platform with:
+It is possible to list all of the versions of `sagemaker-inference` available on your platform with:
 
 ```
-conda search sagemaker-inference-toolkit --channel conda-forge
+conda search sagemaker-inference --channel conda-forge
 ```
 
 
@@ -110,15 +113,17 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
 =====================
 
+* [@BastianZim](https://github.com/BastianZim/)
 * [@benhuff](https://github.com/benhuff/)
 * [@mwilson8](https://github.com/mwilson8/)
+* [@mxr-conda](https://github.com/mxr-conda/)
 * [@rluria14](https://github.com/rluria14/)
 
