@@ -15,8 +15,9 @@ build:
 
 outputs:
   - name: sagemaker-inference
-    script: {{ PYTHON }} -m pip install . -vv
-    noarch: python
+    build:
+      noarch: python
+      script: {{ PYTHON }} -m pip install . -vv
     requirements:
       host:
         - pip
