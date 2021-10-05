@@ -53,3 +53,4 @@ extra:
     - rluria14
     - benhuff
     - BastianZim
+  feedstock-name: sagemaker-inference-toolkit
