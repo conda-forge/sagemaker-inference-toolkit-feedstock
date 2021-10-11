@@ -42,7 +42,7 @@ outputs:
       noarch: generic
     requirements:
       run:
-        - {{ pin_subpackage('sagemaker-inference', max_pin="x.x.x") }}
+        - {{ pin_subpackage('sagemaker-inference', exact=True) }}
     test:
       imports:
         - sagemaker_inference
@@ -52,7 +52,7 @@ outputs:
       noarch: generic
     requirements:
       run:
-        - {{ pin_subpackage('sagemaker-inference', max_pin="x.x.x") }}
+        - {{ pin_subpackage('sagemaker-inference', exact=True) }}
     test:
       imports:
         - sagemaker_inference
