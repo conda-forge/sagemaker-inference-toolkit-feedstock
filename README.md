@@ -1,11 +1,11 @@
-About sagemaker-inference-toolkit
-=================================
+About sagemaker-inference-toolkit-feedstock
+===========================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sagemaker-inference-toolkit-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/aws/sagemaker-inference-toolkit/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sagemaker-inference-toolkit-feedstock/blob/main/LICENSE.txt)
 
 Summary: Open source toolkit for helping create serving containers to run on Amazon SageMaker.
 
