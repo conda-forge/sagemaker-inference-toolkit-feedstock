@@ -1,5 +1,5 @@
 {% set name = "sagemaker_inference" %}
-{% set version = "1.9.3" %}
+{% set version = "1.10.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 12f627ece4e1d95d483ca1b9920af560e0adfff4ef06343702b35028023be4d3
+  sha256: 2fc4a7e0380f180a9ee305f25c61841d50ba047bb889d2f2f81d98bf3f6fc6bc
 
 build:
   number: 0
@@ -29,6 +29,7 @@ outputs:
         - retrying >=1.3.3,<1.4
         - scipy
         - six
+        - boto3
     test:
       imports:
         - sagemaker_inference
